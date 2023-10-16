@@ -32,3 +32,9 @@
                     - Save chamges to the local repo after making changes
                         - git add.
                         - git commit -m "short messages here"
+                - 4. pull
+                    - update the local repo by comparing to the remote repo
+                        - git pull
+                - 5. push
+                    - pushes changes from the local repo to the remote repo
+                        - git push
