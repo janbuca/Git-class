@@ -42,3 +42,16 @@
                 - 5. push
                     - pushes changes from the local repo to the remote repo
                         - git push
+                - 6. branch
+                    - create a new branch for our repo
+                        - git branch <branch name>
+        1.5 Git workflow:forking, sending, pull request, merging
+            - git workflow
+                7. fork
+                    - crate a copey of a repo someone elses repo to your Github account.
+                8. pull request
+                    - lets you ask some else to update their repo after you made some changes to it.
+                    - This is how you ask to contribute to some else code or repo
+                9. merge
+                    - After receiving a pull request, the repo owner decides and integrates the new changes made by someone else.
+                
