@@ -1,0 +1,44 @@
+1.1 The main Bash commands you have to know
+            - Directory(folder) related commands
+                - pwd: Prints the current working directory.
+                - cd: Changes the current directory.
+                - ls: Lists the contents of a directory.
+                - ls -al: list all              
+                - mkdir: Creates a new directory.
+                - touch: Creates a new file.
+                - echo: Prints text to the terminal(write text).
+                - cat: Concatenates and prints the contents of a file.
+                - mv: Moves or renames a file or directory.
+                - rm: Removes a file or directory.
+                - rmdir: remove empty folder (Removes a directory).
+                - rm -rf:remove folder and anything inside it.
+                - grep: Searches for a pattern in a file(search a string in a file).
+                - clear: clears your screen.
+                - exit - exit terminal.                
+                - cp: Copies a file or directory.               
+                - chmod: change permissions of a file or a folder.
+                    - Example without using the numbers
+                        - chmod u-rwx Folder/FileName.
+                        - chmod u+rwx Folder/FileName.
+
+                        - u => user(the file owenr)
+                        - g => group
+                        - o => other (everyone else)
+
+                        - use minus (-) sign to take away permission.
+                        - use puls (+) sign to give permission.
+
+                        - r => read
+                        - w => write
+                        - x => execute
+
+            - Some of Addional commandes
+                - sudo: Runs a command with administrative privileges.
+                man: Displays the manual page for a command.
+                ls: List files and directories in the current directory.
+                man: Display the manual pages for a command.
+                history: Display the command history.
+                curl: Transfer data to or from a server using various protocols.
+                tar: Manipulate archive files.
+                find: Search for files and directories based on various criteria.
+                ssh: Securely connect to a remote server.
