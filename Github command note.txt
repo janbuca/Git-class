@@ -11,7 +11,11 @@
                 - Tracks changes on our code base
                 - Makes it easier for collaboration between developer.
                 - Allows developer to save/commit their work and go back to their saves check-point/commit.
-        1.3 What is Git and Github? how to create a repository on Github?
+        1.3 Git workflow: cloning, editing, commiting, pushing
+            - Git config for terminal use
+                - git config --global user.name "Janbuca"
+                - git config --global user.email "janbuca333@gmail.com"
+        1.4 What is Git and Github? how to create a repository on Github?
             - What is Github
                 - Github is a cloud-based hosting platform for your code and coollaborate with others.
                 - It lets you and work together on projects from anywhere.
