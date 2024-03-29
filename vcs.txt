@@ -1,0 +1,56 @@
+- What is version Control System (VCS)?
+    - VCS is a software that helps software developers to work together and maintain a complete history of their work.
+    - It is the practice of tracking and managing changes to software code
+    - They are software tools that help software teams manage changes to source code over time
+    - Keeps track of every modification to the code in a special kind of data
+
+    - There are Two Types of VCS
+        - Centralized version control system (CVCS)
+        - Distributed version control system (DVCS)
+    
+    - Centralized VCS
+    ```````````````````
+        - In subversion CVS, perforce etc. A central server repository holds the "official copy" of th code.
+        - The server maintains the sole version history copy.
+        - You make "checkout" of it to your local copy
+        - You make local modification.
+        - You changes are not versioned.
+        - When your's done, you "check in" back to the server.
+        - You check in increments the repo's version.
+
+        - Advantages and Disadvantages of CVCS
+        ``````````````````````````````````````````````
+            - Advantages:
+                - Relatively easy Setup.
+                - Provides transparency.
+                - Enable admins control the workflow.
+
+            - Disadvantages:
+                - If the main server goes down, developers can's save versioned changes.
+                - Remote commits are slow. 
+                - Unsolicited changes might ruin development.
+                - if the central database is corrupted is corrupted, the entire history could be lost(Security issues).
+
+    - Distributed VCS
+    ``````````````````
+        - In git, mercurial, etc... you don't "Checkout" from a central repo.
+        - You "Clone" it and "Pull" changes from it 
+        - Your local repo is a complete copy of everything on the remote server.
+        - Your's is "just as good" as theirs 
+        - Many operations are local.
+        - Check in/out from local repo
+        - Commit changes to local repo
+        - Local repo keeps version history
+        - When repo keeps version history
+        - Whey you're ready, you can "push" changes back to server.
+
+        - Advantages DVCS
+            - Allows developers to work simultaneously
+            - Does not allow overwriting each other's changes.
+            - Maintains a history of every version
+            - Being able to trace each change made to the software and connect it to project management and bug tracking software
+            - Managing and protection the source code.
+            - Supports the developer's workflow and not any rigid way of working.
+            - Backup
+            - CI/Cd
+            - Integration in development tools.
