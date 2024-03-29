@@ -66,3 +66,92 @@
         - Support for non-linear development
         - Fully distributed
         - Able to handle large projects efficiently.
+
+- Git Life-cycle
+```````````````````
+    - General workflow of Git is as follows
+        - You clone the git repository as a working copy
+        - You modify the working copy by adding/editing files
+        - If necessary, you also update the working copy by taking other developer's changes
+        - You review the changes before commit.
+        - You commit changes, if everything is fine, then you push the changes to the repository.
+        - After committing, if you realize something is wrong, then your correct the last commit and push the changes to the repository.
+
+    - Basic Git workflow
+        - Modify files in your working directory
+        - stage files, adding  snapshots of them to your staging area.
+        - Commit, with takes the files in the staging area and stores that snapshots permanently to your Git directory.
+
+    - Customize Git Environment
+        - Git stores all global configurations in .gitconfig file, with is located in your home directory.
+        - To set these configuration values as global, add the --global option.
+        - If you omit --global option, then you configurations are specific for the current git repository.
+        - You can also setup system wide configuration use --system option with root/administration right.
+        - Git stores these values in the /etc/gitconfig file, which contains the configuration for every user and repository on the system.
+
+    * Setting username:
+        - git config --global user.name"Your Name"
+
+    * Setting email id:
+        - git config --global user.email"youremail@domain.com"
+    
+    * Showing configured User name and Email Id :
+        - git config --list
+    * Removing Configuration:
+        - git config --unset [--global | --system] --remove-section [section]
+            This will remove entire section like [user] or [core].
+        
+    * Status of Files:
+        - `git status` command shows the state of the currently tracked files in your project. It provides information such as which files have been
+        - `git status` command shows the state of files in your working directory compared to the last committed snapshot. It gives information about new,
+        - `git status` command shows the state of files in your working directory compared to the last committed snapshot. It gives information about new,
+    * Avoid merge commits for pulling:
+        - git config --global branch.autosetuprebase always
+    * Setting default editor
+        - git config --global core.editor vim
+    * Color highlighting 
+        - git config --global Color.ui true
+        - git config --global Color.status auto
+        - git config --global Color.branch auto
+    
+    * Setting default merge tool:
+        - git  config --global merge.tool "your_merge_tool"
+    *  Configure diff tools:
+        - git config --global diff.tool "your_diff_tool"
+
+    * Listing Git Settings:
+        - git config --list 
+          
+
+    - Git Commands
+        - Commands                   Description
+        git clone url               Copy a Git repository so you can add to it
+        git init                    Create an empty Git repository or reinitialize an existing one
+        git status                  Show the working tree status
+        git log                     Shows the commit history
+        git add <file>              Add file contents to the staging area
+        git rm <file>               Remove files from the staging area and working directory
+        git mv <file> <new-file>    Rename a file, a directory, or a symlink
+        git checkout HEAD^          Revert changes made in last commit
+        git reset --hard            Throw away all your working directory changes since the last commit
+        git show                    Show information about a commit
+        git tag                     Tag a specific point in time
+        git push origin master      Push local master to remote master on origin
+        git pull                    Download objects and updates from another repository
+        git fetch                   Download objects and refs from another repository
+        git merge origin/master     Merge the tip of the origin/master branch into your current branch
+        git diff                    Compare the latest version with the current version
+        git diff --staged           Compare the staging area with the latest version
+        git diff --abbrev=<n>       Display differences between the working tree and the index
+        git blame [file]            Print line-by-line attribute annotations
+        git shortlog [-sn]           Generate a log of authors and their contribution count
+        
+
+### References ###
+1. https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+2. http://www.thegeekstuff.com/2008/10/pro-git-add-and-commit
+3. https://help.github.com/articles/deleting-a-repository/
+4. http://marklodato.github.io/visual-git-guide/index-en.html
+5. http://ndpsoftware.com/VisualGitIndex.html
+6. http://learngitbranching.js.org/
+7. https://try.github.io/levels/1/challenges/1
