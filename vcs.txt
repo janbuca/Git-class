@@ -54,3 +54,15 @@
             - Backup
             - CI/Cd
             - Integration in development tools.
+
+- Git?
+    - Git is a distributed revision control and source code management system with an emphasis on speed.
+    - Created by "Linus Torvalds" creator of linux, in 2005.
+    - Came out of Linux development community.
+    - Designed to version control on Linux Kernel
+
+    - Goals of Git
+        - Speed
+        - Support for non-linear development
+        - Fully distributed
+        - Able to handle large projects efficiently.
